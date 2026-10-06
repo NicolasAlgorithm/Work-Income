@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #0b1220;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+@layer components {
+  .field {
+    @apply w-full rounded-xl border border-white/15 bg-white/[0.06] px-4 py-3.5 text-sm text-white outline-none transition placeholder:text-slate-600 focus:border-mint focus:bg-white/[0.09] focus:ring-4 focus:ring-mint/10;
+  }
+}
