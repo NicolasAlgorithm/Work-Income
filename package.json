@@ -6,7 +6,7 @@
   "packageManager": "pnpm@12.9.1",
   "scripts": {
     "dev": "vite",
-    "dev:login": "vite --mode login --port 5175",
+    "dev:login": "vite --mode login --port 5173",
     "dev:home": "vite --port 5174",
     "build": "vite build",
     "lint": "eslint .",
