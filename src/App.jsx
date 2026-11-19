@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import './App.css'
+import AppHeader from './components/AppHeader.jsx'
 
 const jobListings = [
   { id: 1, title: 'Desarrollador Backend Python / Django', description: 'Buscamos desarrollador para proyecto de 6 meses.', pay: 80, category: 'IT & Desarrollo', icon: '💻' },
@@ -12,8 +13,6 @@ const jobListings = [
   { id: 8, title: 'Asistente Contable', description: 'Registro de transacciones y conciliaciones mensuales.', pay: 40, category: 'Contabilidad', icon: '🧮' },
   { id: 9, title: 'Analista de Ciberseguridad', description: 'Monitoreo de amenazas y respuesta a incidentes.', pay: 85, category: 'IT & Desarrollo', icon: '🔒' },
 ]
-
-const navItems = ['Trabajos', 'Cursos', 'Perfil', 'Configuracion']
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('')
@@ -29,15 +28,7 @@ function App() {
   return (
     <main className="min-h-screen bg-ink font-sans text-slate-300">
       <div className="mx-auto max-w-[1500px] px-5 py-6 md:px-8 md:py-8">
-        <header className="mb-8 flex flex-col gap-5 border-b border-white/10 pb-5 md:flex-row md:items-center md:justify-between">
-          <div className="flex items-center gap-3 text-2xl font-bold text-white">
-            <span className="grid h-9 w-9 place-items-center rounded-xl bg-mint font-display text-xl text-ink">W</span>
-            <span>Work<span className="text-mint">+</span>Income</span>
-          </div>
-          <nav className="flex flex-wrap gap-5 text-sm font-semibold" aria-label="Navegacion principal">
-            {navItems.map((item, index) => <a className={index === 0 ? 'border-b-2 border-mint pb-1 text-white' : 'transition-colors hover:text-white'} href="#" key={item}>{item}</a>)}
-          </nav>
-        </header>
+        <AppHeader active="jobs" />
 
         <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
