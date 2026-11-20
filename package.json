@@ -8,6 +8,9 @@
     "dev": "vite",
     "dev:login": "vite --mode login --port 5173",
     "dev:home": "vite --port 5174",
+    "dev:courses": "vite --mode courses --port 5175",
+    "dev:profile": "vite --mode profile --port 5176",
+    "dev:settings": "vite --mode settings --port 5177",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
