@@ -6,8 +6,14 @@ const features = [
   { icon: '+', title: 'Inclusión financiera', description: 'Ingresos seguros y accesibilidad para todos.' },
 ]
 
-function Login() {
+function Login({ onLogin }) {
   const [showPassword, setShowPassword] = useState(false)
+  const [username, setUsername] = useState('')
+
+  function handleSubmit(event) {
+    event.preventDefault()
+    onLogin(username)
+  }
 
   return (
     <main className="min-h-screen bg-ink px-4 py-6 font-sans text-slate-300 sm:px-8 sm:py-10">
@@ -50,12 +56,12 @@ function Login() {
               <p className="mt-3 text-sm text-slate-400">Accede a tu espacio de Work+Income.</p>
             </div>
 
-            <form className="space-y-7">
-              <label htmlFor="email">
-                <span className="sr-only">Correo electronico</span>
+            <form className="space-y-7" onSubmit={handleSubmit}>
+              <label htmlFor="username">
+                <span className="sr-only">Usuario</span>
                 <span className="relative block">
                   <span className="pointer-events-none absolute inset-y-0 left-4 flex items-center text-slate-500" aria-hidden="true">@</span>
-                  <input className="field pl-11" id="email" name="email" type="email" placeholder="Correo electrónico" autoComplete="email" required />
+                  <input className="field pl-11" id="username" name="username" type="text" placeholder="Usuario" value={username} onChange={(event) => setUsername(event.target.value)} autoComplete="username" required />
                 </span>
               </label>
 
