@@ -9,7 +9,7 @@ Frontend del modulo de cursos de Work+Income. Es solo interfaz: los datos vienen
 | `#/cursos` | Catalogo con busqueda, filtros, orden y pestanas "Explorar" / "Mis cursos" |
 | `#/cursos/:id` | Detalle del curso: temario, inscripcion, progreso y cursos relacionados |
 
-El enrutado por hash esta en `src/hooks/useHashRoute.js` y `src/AppRouter.jsx`. `pnpm dev:courses` abre la app directamente en el catalogo.
+El enrutado por hash esta en `src/hooks/useHashRoute.js` y `src/AppRouter.jsx`. Abre `http://localhost:5173/#/cursos` para entrar directamente al catalogo.
 
 ## Estructura
 

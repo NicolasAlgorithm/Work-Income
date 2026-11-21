@@ -11,7 +11,7 @@ Frontend del perfil del usuario en Work+Income. Es solo interfaz: los datos vien
 | `#/perfil/postulaciones` | Postulaciones a trabajos con su estado y etapa del proceso |
 | `#/perfil/editar` | Formulario de edicion del perfil |
 
-`pnpm dev:profile` abre la app directamente en el perfil.
+Abre `http://localhost:5173/#/perfil` para entrar directamente al perfil.
 
 ## Estructura
 

@@ -12,7 +12,7 @@ Frontend de la configuracion de cuenta de Work+Income. Es solo interfaz: los val
 | `#/configuracion/privacidad` | Visibilidad del perfil, datos de contacto visibles, descarga y borrado de datos |
 | `#/configuracion/preferencias` | Idioma, zona horaria, pagina de inicio y reducir animaciones |
 
-`pnpm dev:settings` abre la app directamente en la configuracion.
+Abre `http://localhost:5173/#/configuracion` para entrar directamente a la configuracion.
 
 ## Comportamiento
 
