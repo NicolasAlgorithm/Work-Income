@@ -56,8 +56,8 @@ function Login({ onLogin }) {
               <p className="mt-3 text-sm text-slate-400">Accede a tu espacio de Work+Income.</p>
             </div>
 
-            <form className="space-y-7" onSubmit={handleSubmit}>
-              <label htmlFor="username">
+            <form className="space-y-5" onSubmit={handleSubmit}>
+              <label className="block" htmlFor="username">
                 <span className="sr-only">Usuario</span>
                 <span className="relative block">
                   <span className="pointer-events-none absolute inset-y-0 left-4 flex items-center text-slate-500" aria-hidden="true">@</span>
@@ -65,7 +65,7 @@ function Login({ onLogin }) {
                 </span>
               </label>
 
-              <label htmlFor="password">
+              <label className="mt-5 block" htmlFor="password">
                 <span className="sr-only">Contrasena</span>
                 <span className="relative block">
                   <span className="pointer-events-none absolute inset-y-0 left-4 flex items-center text-slate-500" aria-hidden="true">#</span>
