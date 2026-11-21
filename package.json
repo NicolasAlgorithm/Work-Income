@@ -5,12 +5,17 @@
   "type": "module",
   "packageManager": "pnpm@12.9.1",
   "scripts": {
+<<<<<<< HEAD
     "dev": "vite",
     "dev:login": "vite --mode login --port 5175",
     "dev:home": "vite --port 5174",
+=======
+    "dev": "vite --host 0.0.0.0",
+    "dev:login": "vite --host 0.0.0.0 --mode login --port 5178",
+>>>>>>> frontend
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview --host 0.0.0.0"
   },
   "dependencies": {
     "react": "^19.2.8",
