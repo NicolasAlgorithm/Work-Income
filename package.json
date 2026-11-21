@@ -5,10 +5,10 @@
   "type": "module",
   "packageManager": "pnpm@12.9.1",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host 0.0.0.0",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview --host 0.0.0.0"
   },
   "dependencies": {
     "react": "^19.2.8",
